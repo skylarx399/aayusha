@@ -11,29 +11,53 @@
 </head>
 
 
-<body>
+<body bgcolor="skyblue">
     <div class="container">
         <form action="https://www.google.com/search" method="get" class="search-bar">
             <input type="text" placeholder="search anybooks" name="q">
-            <button type="submit"><img src="./img/searchicon.png" alt=""></button>
+            <button type="submit"><img src="./img/searchicon.png"></button>
         </form>
     </div>
+    <!-- <br>
+    <br>
+    <br>
+    <br>
+    <br> -->
+    <div style="display: flex; justify-content: center">
+        <img src="./img/logo1.png">
+    </div>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <!-- Navbar -->
     <nav class="navbar">
-        <!-- <h1 class="title">Everything has its own meaning in life just like Books</h1> -->
+        <br>
+        <br>
+        <!-- <label class="logo">Summary of all</!-->
+        <!-- <h1 class="Logo">Summary of all</h1> -->
+        <br>
         <ul class="nav-links">
+            <br>
+            <br>
             <li class="active">
-                <a href="#"></a>Home</li>
-            <li>
-                <a href="#"></a>Content</li>
-            <li>
-                <a href="#"></a>Explore</li>
-            <li>
-                <a href="#"></a>About</li>
-            <li>
-                <a class="ctn" href="#"></a>Contact</li>
+                <a href="#">Home</a>
+            </li>
+
+            <li class="active">
+                <a href="#content">Content</a>
+            </li>
+            <li class="active">
+                <a href="#explore">Explore</a>
+            </li>
+            <li class="active">
+                <a href="#about">About</a>
+
+            </li>
+            <li class="ctn">
+                <a href="#contact">Contact</a>
+            </li>
 
         </ul>
         <img src="./img/btn.png" alt="" class="menu-btn">
@@ -55,8 +79,35 @@
         </div>
     </header>
 
+    <section class="book names" id="content">
+        <div class="list">
+            <h1>Name of books</h1>
+            <ul>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
     <!-- == Events == -->
-    <section class="events">
+    <section class="events" id="explore">
         <div class="title">
             <h1>Upcoming Events</h1>
             <div class="line"></div>
@@ -89,10 +140,10 @@
         </div>
     </section>
 
-    <section class="bookselfs">
+    <section class="bookselfs" >
         <div class="row">
             <div class="col content-col">
-                <h1>Upcoming Books with Aurthor </h1>
+                <h1> Upcoming Books with Aurthor </h1>
                 <br>
                 <br>
                 <div class="line"></div>
@@ -111,11 +162,60 @@
             </div>
         </div>
     </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-    <section class="footer">
+
+
+    <section class="About" id="about">
+
+        <h1>About</h1>
+        <br>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="footer" id="contact">
+        <h2>Contact information</h2>
+        <br>
         <p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1580.3302888715687!2d145.1139834753403!3d-37.6101466149383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad64aed3592f79f%3A0xb844c7cfdd73720a!2sMeander%20Rd%2C%20Doreen%20VIC%203754%2C%20Australia!5e0!3m2!1sen!2sin!4v1667336508505!5m2!1sen!2sin"
-                width="1900" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                width="350" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
         <p>If you would like to contact Starbucks Australia, email us at 24-7 customerservice@starbucks.com.au or call our friendly Customer Service team on 1800 787 289. For queries about Starbucks At Home products, including Coffee Pods, contact Nestle
             Australia by visiting Starbucks At Home Australia.</p>
         <br>
@@ -123,8 +223,9 @@
         <p>Copyright © 2022. Starbucks Coffee Australia. All Rights Reserved. Website by Push</p>
     </section>
 
+
     <script>
-        const menubtn = document.querySelector('menu-btn')
+        const menubtn = document.querySelector('.menu-btn')
         const navlinks = document.querySelector('.nav-links')
 
         menuBtn.addEventListener('click', () => {
