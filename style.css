@@ -52,27 +52,27 @@ ul {
 }
 
 .search-bar input {
-    background: padding-box palegoldenrod;
+    background: padding-box rgb(210, 193, 10);
     flex: 1;
     border: 0;
     outline: none;
-    padding: 24px 20px;
-    font-size: 20px;
+    padding: 20px 20px;
+    font-size: 50px;
     color: grey;
 }
 
 ::placeholder {
-    color: powderblue;
+    color: grey;
 }
 
 .search-bar button img {
-    width: 40px;
+    width: 50px;
 }
 
 .search-bar button {
     border: 0;
     border-radius: 50%;
-    width: 20px;
+    width: 50px;
     height: 20px;
     background: transparent;
     cursor: pointer;
@@ -172,7 +172,7 @@ section {
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    background: plum;
+    background: #C87941;
 }
 
 .row .col {
@@ -192,7 +192,7 @@ h4 {
 }
 
 p {
-    color: #982286;
+    color: #DBCBBD;
     padding: 0px 40px;
 }
 
@@ -262,7 +262,7 @@ p {
 
 .content-col h1 {
     font-size: 8vmin;
-    color: #E090DF;
+    color: purple;
 }
 
 .content-col .line {
@@ -280,7 +280,7 @@ p {
 }
 
 .footer {
-    width: 100%;
+    width: 95%;
     min-height: 70px;
     padding: 20px 80px;
     margin: 0;
