@@ -52,7 +52,7 @@ ul {
 }
 
 .search-bar input {
-    background: padding-box rgb(210, 193, 10);
+    background: padding-box #Ffffff;
     flex: 1;
     border: 0;
     outline: none;
