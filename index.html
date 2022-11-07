@@ -9,13 +9,86 @@
     <!-- ==== CSS ==== -->
     <link rel="stylesheet" href="./style.css">
 </head>
-
-
+<style>
+body {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+</style>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <body bgcolor="582233">
     <div class="container">
-        <form action="https://www.google.com/search" method="get" class="search-bar">
+        <div class="input-group">
+            <div class="form-outline">
+              <!--<input type="search" id="form1" class="form-control" />-->
+              <form action="https://www.google.com/search" method="get" class="search-bar">
+                <input type="text" placeholder="search anybooks" name="q">
+              <label class="form-label" for="form1">Search</label>
+            </div>
+            <button type="button" class="btn btn-primary">
+              <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <!--<form action="https://www.google.com/search" method="get" class="search-bar">
             <input type="text" placeholder="search anybooks" name="q">
-            <button type="submit"><img src="./img/searchicon.png"></button>
+            <button type="submit"><img src="./img/searchicon.png"></button>-->
         </form>
     </div>
     <!-- <br>
@@ -23,14 +96,24 @@
     <br>
     <br>
     <br> -->
+
+    <div style="display: flex; justify-content: top;">
+        <h1>WHY BOOK, JUST SUMMARY IT!</h1>
+    </div>
+
     <div style="display: flex; justify-content: center">
-        <img src="./img/logo1.png" width="600" height="800">
+        <img src="./img/logo1.png" width: 200px;
+        height: 300px;
+        object-fit: cover;
+        object-position: 80% 100%;">
     </div>
     <br>
     <br>
     <br>
     <br>
     <br>
+    
+
     <!-- Navbar -->
     <nav class="navbar">
         <br>
@@ -41,6 +124,44 @@
         <ul class="nav-links">
             <br>
             <br>
+            <style>
+                ul {
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 0;
+                  overflow: hidden;
+                  background-color: #333;
+                }
+                
+                li {
+                  float: left;
+                }
+                
+                li a {
+                  display: block;
+                  color: white;
+                  text-align: center;
+                  padding: 14px 16px;
+                  text-decoration: none;
+                }
+                
+                li a:hover {
+                  background-color: #111;
+                }
+                </style>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                      <a href="#">Contact</a>
+                      <a href="#">About</a>
+                      <a href="#">Explore</a>
+                      <a href="#">Content</a>
+                      <a href="#">Home</a>
+                    </div>
+                  </div>
+                  
+                  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
             <li class="active">
                 <a href="#">Home</a>
             </li>
@@ -60,8 +181,8 @@
             </li>
 
         </ul>
-        <img src="./img/btn.png" alt="" class="menu-btn">
-        <!--<div class="container">
+        <!--<img src="./img/btn.png" alt="" class="menu-btn">
+        <div class="container">
             <form action="https://www.google.com/search" method="get" class="search-bar">
                 <input type="text" placeholder="search anybooks" name="q">
                 <button type="submit"><img src="./img/searchicon.png" alt=""></button>
@@ -231,7 +352,16 @@
         menuBtn.addEventListener('click', () => {
             navlinks.classList.toggle('mobile-menu')
         })
-    </script>
+    </script>-->
+    <!--<script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+        </script>-->
 </body>
 
 </html>
